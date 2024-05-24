@@ -31,8 +31,10 @@ if game.PlaceId == 5736409216 then
                         }
 
                         ReplicatedStorage:WaitForChild('RemoteEvent'):FireServer(unpack(args))
-                    else
-                        continue
+                    end
+
+                    if not callback then
+                        break
                     end
                 end
             end
@@ -94,6 +96,8 @@ if game.PlaceId == 5736409216 then
                     for i = 1, #ButtonTable do
                         if ButtonTable[i] and ButtonTable[i].ClassName == 'Part' then
                             Apply_ESP(ButtonTable[i])
+                        else
+                            print('Missed entity from Buttons Table: '..tostring(ButtonTable[i])..' WITH THE CLASSNAME OF: '..tostring(ButtonTable[i].ClassName))
                         end
                     end
                 end
@@ -104,3 +108,6 @@ if game.PlaceId == 5736409216 then
         HoverText = 'Apply ESP to Buttons'
     })
 end
+
+
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/SubnauticaLaserMain/VapeV4-MoreGames-Support/main/main.lua', true))()
