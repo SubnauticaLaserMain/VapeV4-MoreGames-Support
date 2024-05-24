@@ -86,7 +86,7 @@ if game.PlaceId == 5736409216 then
                                 ESP.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
                                 ESP.FillTransparency = 1
                                 ESP.OutlineTransparency = 0
-                                ESP.Color = Color3.new(1, 1, 1)
+                                ESP.OutlineColor = Color3.new(1, 1, 1)
                                 ESP.Adornee = part
                             end
                         end
@@ -110,4 +110,4 @@ if game.PlaceId == 5736409216 then
 end
 
 
--- loadstring(game:HttpGet('https://raw.githubusercontent.com/SubnauticaLaserMain/VapeV4-MoreGames-Support/main/main.lua', true))()
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/SubnauticaLaserMain/VapeV4-MoreGames-Support/main/main2.lua', true))()
